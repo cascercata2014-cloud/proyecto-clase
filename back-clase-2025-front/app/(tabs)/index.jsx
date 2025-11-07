@@ -13,7 +13,7 @@ function enviarMensaje() {
   const Mensaje = {
     mensaje:mensajelocal
   }
-  axios.post("http://192.168.1.58:5000/subir", Mensaje)
+  axios.post("https://backend-b1kw.onrender.com/subir", Mensaje)
   .then(function(res){
     alert("El mensaje se envió");
     setTimeout(function(){
