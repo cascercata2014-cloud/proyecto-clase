@@ -13,7 +13,7 @@ useEffect (function(){
 }, []);
 
 function traerMensajes (){
-axios.get("http://192.168.1.58:5000/recibir").
+axios.get("https://backend-b1kw.onrender.com/recibir").
 then(function(res){
     if (res.data.status) {
         setMensajeLocal(res.data.mensaje);
